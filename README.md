@@ -1,6 +1,13 @@
 # Genesis Software Engineering School PHP Case
 
 ## Запуск
+Після клонування репозиторію, необхідно встановити залежності Laravel, щось на кшталт цього:
+```
+1.Run git clone <my-cool-project>
+2.Run composer install
+3.Run cp .env.example .env
+4.Run php artisan key:generate
+```
 Для того, щоб розсилка працювала, необхідно в файлі .env вказати дані для підключення до SMTP сервера.  
 ```
 MAIL_DRIVER = smtp
