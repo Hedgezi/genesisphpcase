@@ -59,9 +59,6 @@ class SubscriptionController extends Controller
             return \response("", 200);
         }
 
-        $actualRate = $this->rateService->getRate();
-        $data = array('rate'=>strval($actualRate));
-
         foreach ($emailArray as $email) {
             Mail::to($email)->send(new BTCRate($this->rateService));
         }
